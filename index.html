@@ -5,17 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kyle Wilkinson Design</title>
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <script src="./Javascript.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <!-- <script src="./Javascript.js"></script> -->
 </head>
 <body>
     
-        <header class="flex-container">
+        <header class="flex-container" id="header">
             <nav>
-                <span id="HomePush">Home</span>
-                <span id="AboutPush">About</span>
-                <span id="PortfolioPush">Portfolio</span>
-                <span id="ContactPush">Contact</span>
+                <span id="HomePush"><a href="./index.html">Home</a></span>
+                <span id="AboutPush"><a href="./About.html">About</a></span>
+                <span id="PortfolioPush"><a href="./Portfolio.html">Portfolio</a></span>
+                <span id="ContactPush"><a href="./Contact.html">Contact</a></span>
             </nav>
         </header>
             
@@ -26,6 +26,14 @@
         <footer>
                 <p class="copyright">© Copyright Kyle Wilkinson 2021</p>
         </footer>
-    
+    <script>
+    // On click, execute my function
+    document.getElementById("HomePush").click(open);
+    function open() {
+                let height = document.getElementById("header").style.minHeight='80vh';
+            };
+       
+            
+    </script>
 </body>
 </html>
