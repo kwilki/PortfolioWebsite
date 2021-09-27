@@ -11,19 +11,24 @@ body{
     z-index: 200;
 }
 
-/* ////// grid idea ////// */
+            /* ////// grid idea ////// */
 #gridContainer {
     display: grid;
     grid-template-areas: 
     "header"
     "header"
+    "header"
+    "main"
+    "main"
+    "main"
+    "main"
     "footer"
     "footer"
-    "footer";
+    ;
     width: 100vw;
     height: 100vh;
 }
-/* ////////// NAV ////////// */
+            /* ////////// NAV ////////// */
 
 header {
     grid-area: header;
@@ -54,16 +59,28 @@ a:hover{
     cursor: pointer;
 }
 
-/* ////////// NAV ////////// */
+            /* ////////// NAV ////////// */
 
-/* ////////// Main ////////// */
-#content {
-    margin-top: 2em;
-    min-height: calc(100vh - 370px);
+
+            /* ////////// Main ////////// */
+
+#content{
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    max-width: 350px;
 }
-/* ////////// Main ////////// */
+.wrapper {
+    
+    
+}
 
-/* ////////// Footer ////////// */
+            /* ////////// Main ////////// */
+
+
+            /* ////////// Footer ////////// */
 footer {
     grid-area: footer;
     background-color: #364771;
@@ -82,9 +99,9 @@ footer {
     color: #FDF5F1;
     font-family: sans-serif;
     font-size: 0.6rem;
-    padding: 2em;
+    padding: 0 1em 15em 0;
     margin-bottom: 0.2em;
     transform: skewY(10deg);
     z-index: 500;
 }
-/* ////////// Footer ////////// */
+            /* ////////// Footer ////////// */
