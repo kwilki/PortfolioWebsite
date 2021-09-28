@@ -72,10 +72,6 @@ a:hover{
     width: 80%;
     max-width: 350px;
 }
-.wrapper {
-    
-    
-}
 
             /* ////////// Main ////////// */
 
@@ -99,9 +95,10 @@ footer {
     color: #FDF5F1;
     font-family: sans-serif;
     font-size: 0.6rem;
-    padding: 0 1em 15em 0;
-    margin-bottom: 0.2em;
-    transform: skewY(10deg);
-    z-index: 500;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0 1em 1em 0;
+    z-index: 1100;
 }
             /* ////////// Footer ////////// */
