@@ -1,104 +1,133 @@
+@font-face {
+    font-family: 'Akzidenz-GroteskNextXLight';
+    src: url(../Typeface/AGNextExtraLight.otf);
+    /* font-weight: normal;
+    font-style: normal; */
+}
+
+@font-face {
+    font-family: 'Akzidenz-GroteskNextLight';
+    src: url(../Typeface/AGNextLight.otf);
+    /* font-weight: normal;
+    font-style: normal; */
+}
 
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
 }
 
-body{
-    width: 100%;
-    background-color: #FDF5F1;
-    overflow: hidden;
-    z-index: 200;
-}
-
-            /* ////// grid idea ////// */
-#gridContainer {
+body {
+    min-height: 100%;
     display: grid;
-    grid-template-areas: 
+    grid-template-rows: 25% auto 10% ;
+    grid-template-columns: 100%;
+    /* grid-template-areas: 
     "header"
-    "header"
-    "header"
     "main"
-    "main"
-    "main"
-    "main"
-    "footer"
-    "footer"
-    ;
-    width: 100vw;
-    height: 100vh;
-}
-            /* ////////// NAV ////////// */
+    "footer"; */
+    background-color: #FDF5F1;
 
+}
+
+            /* /// header /// */
 header {
-    grid-area: header;
+    /* grid-area: header; */
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-family: 'Akzidenz-GroteskNextXLight', sans-serif;
     background-color: #364771;
-    width: 100%;
-    /* min-height: 80vh; */ /*////////// open changed height ////////// */
-    transform: skewY(-10deg);
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    margin-top: -500px;
-    border-bottom: 1px solid #FDF5F1;
-    z-index: 1000;
+    box-shadow: 0 2px 10px #888888;
 }
 
-a, span {
-    font-family: sans-serif;
+.logo {
+    display: flex;
+    justify-content: center;
+    color: #FDF5F1;
+    font-size: 1.5rem;
+    padding: 0.5em 0.5em 0 0.5em;
+    font-family: 'Akzidenz-GroteskNextXLight', sans-serif;
+    text-transform: uppercase;
+}
+.line {
+    border-top: solid 0.5px #FDF5F1;
+}
+
+nav.navigation  {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1em;
+    
+}
+
+a {
+    font-family: 'Akzidenz-GroteskNextXLight', sans-serif;
     text-decoration: none;
     font-size: 1rem;
     color: #FDF5F1;
-    display: inline-block;
     margin-bottom: 0.2em;
-    padding: 0 0.25em 0 0.25em;
+    padding: 0 0.5em 0 0.5em;
     z-index: 1100;
 }
+            /* /// header /// */
 
-a:hover{
-    cursor: pointer;
-}
-
-            /* ////////// NAV ////////// */
-
-
-            /* ////////// Main ////////// */
-
-#content{
-    grid-area: main;
-    display: flex;
-    align-items: center;
-    margin: auto;
+#content {
+    /* grid-area: main; */
+    grid-row-start: 2;
+    grid-row-end: 3;
     width: 80%;
-    max-width: 350px;
+    margin: 2em auto;
+    
+}
+.about-wrapper {
+    padding-left: 2em;
 }
 
-            /* ////////// Main ////////// */
+.about-container {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: 30% 60%;
+    grid-template-areas: 
+    "... heading2"
+    "... column2";
+    grid-gap: 1em;
+}
+
+h2 {
+    font-family: 'Akzidenz-GroteskNextLight', sans-serif;
+    grid-area: heading2;
+}
+
+.about-text {
+    grid-area: column2;
+}
+
+img#portrait {
+    display: block;
+    width: 200px;
+    margin: 2em auto;
+}
 
 
-            /* ////////// Footer ////////// */
+
+p {
+    font-family: 'Akzidenz-GroteskNextLight', sans-serif;
+}
+
 footer {
-    grid-area: footer;
-    background-color: #364771;
-    transform: skewY(-10deg);
-    display: flex;
+    /* grid-area: footer; */
+    grid-row-start: 3;
+    grid-row-end: 4;
     align-items: flex-end;
-    justify-content: end;
-    margin-bottom: -10em;
-    /* transform: rotate(-10deg); */
-    /* bottom: 0; */
-    
-    z-index: 500;
+    background-color: #364771;
+    box-shadow: 0 -2px 10px #888888;
 }
 
 .copyright {
     color: #FDF5F1;
-    font-family: sans-serif;
-    font-size: 0.6rem;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 0 1em 1em 0;
-    z-index: 1100;
+    text-align: right;
+    padding-right: 2em;
 }
-            /* ////////// Footer ////////// */

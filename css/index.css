@@ -97,12 +97,12 @@ footer {
 
 h1 {
     font-size: 3em;
-    line-height: normal;
 }
 
 .fullname { 
     border-top: solid 0.5px #FDF5F1;
-    font-size: 1.1em;
+    font-size: 1.1rem;
+    padding-top: 0.2rem;
 }
 
 .copyright {
