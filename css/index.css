@@ -4,6 +4,13 @@
     margin: 0;
 }
 
+@font-face {
+    font-family: 'Akzidenz-GroteskNextXLight';
+    src: url(../Typeface/AGNextExtraLight.otf);
+    /* font-weight: normal;
+    font-style: normal; */
+}
+
 body{
     width: 100%;
     background-color: #FDF5F1;
@@ -41,7 +48,7 @@ header {
 }
 
 a, span {
-    font-family: sans-serif;
+    font-family: 'Akzidenz-GroteskNextXLight', sans-serif;
     text-decoration: none;
     font-size: 1rem;
     color: #FDF5F1;
@@ -70,13 +77,32 @@ footer {
     background-color: #364771;
     transform: skewY(-10deg);
     display: flex;
-    align-items: flex-end;
-    justify-content: end;
-    margin-bottom: -10em;
-    /* transform: rotate(-10deg); */
-    /* bottom: 0; */
-    
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -20em;
     z-index: 500;
+}
+
+.logo {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1200;
+    font-family: 'Akzidenz-GroteskNextXLight', sans-serif;
+    text-transform: uppercase;
+    color: #FDF5F1;
+}
+
+h1 {
+    font-size: 3em;
+    line-height: normal;
+}
+
+.fullname { 
+    border-top: solid 0.5px #FDF5F1;
+    font-size: 1.1em;
 }
 
 .copyright {
