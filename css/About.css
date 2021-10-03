@@ -112,11 +112,7 @@ h2 {
     color: #364771;
 }
 
-img#portrait {
-    display: block;
-    width: 200px;
-    margin: 2em auto;
-}
+
 
 p {
     font-family: 'Akzidenz-GroteskNextLight', sans-serif;
@@ -147,3 +143,10 @@ footer {
 }
 
                     /* ///// FOOTER ///// */
+
+
+img#portrait {
+    display: block;
+    width: 50px;
+    margin: 2em auto;
+}
