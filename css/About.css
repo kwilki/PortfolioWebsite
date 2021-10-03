@@ -18,7 +18,7 @@
     /* font-weight: normal;
     font-style: normal; */
 }
-
+                        /* ///// INITIAL ///// */
 * {
     margin: 0;
     padding: 0;
@@ -36,8 +36,9 @@ body {
     background-color: #FDF5F1;
 
 }
+                        /* ///// INITIAL ///// */
 
-            /* /// header /// */
+                        /* ///// HEADER ///// */
 
 header {
     display: grid;
@@ -89,7 +90,9 @@ a {
     padding: 0 0.5em 0 0.5em;
     z-index: 1100;
 }
-            /* /// header /// */
+                        /* ///// HEADER ///// */
+
+                        /* ///// MAIN ///// */
 
 #intro {
     grid-row-start: 2;
@@ -115,8 +118,6 @@ img#portrait {
     margin: 2em auto;
 }
 
-
-
 p {
     font-family: 'Akzidenz-GroteskNextLight', sans-serif;
     color: #364771;
@@ -126,10 +127,8 @@ p {
     font-family: 'Akzidenz-GroteskNextReg', sans-serif;
 }
 
-#experience {
-    
-}
 
+                    /* ///// FOOTER ///// */
 footer {
     display: grid;
     grid-row-start: 3;
@@ -146,3 +145,5 @@ footer {
     text-align: right;
     padding: 0 1em 0.5em 0;
 }
+
+                    /* ///// FOOTER ///// */
