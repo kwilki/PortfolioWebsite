@@ -25,7 +25,7 @@
         grid-column-end: 8;
     }
 
-    #interests {
+    section#interests {
         grid-column-start: 1;
         grid-column-end: 8;
     }
