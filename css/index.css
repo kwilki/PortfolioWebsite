@@ -1,15 +1,9 @@
-
+@import url(./fonts.css);
 * {
     padding: 0;
     margin: 0;
 }
 
-@font-face {
-    font-family: 'Akzidenz-GroteskNextXLight';
-    src: url(../Typeface/AGNextExtraLight.otf);
-    /* font-weight: normal;
-    font-style: normal; */
-}
 
 body{
     width: 100%;
@@ -50,7 +44,7 @@ header {
 a, span {
     font-family: 'Akzidenz-GroteskNextXLight', sans-serif;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.1em;
     color: #FDF5F1;
     display: inline-block;
     margin-bottom: 0.2em;
@@ -60,6 +54,11 @@ a, span {
 
 a:hover{
     cursor: pointer;
+    font-family: 'Akzidenz-GroteskNextReg', sans-serif;
+}
+
+span#HomePush a{
+    font-family: 'Akzidenz-GroteskNextReg', sans-serif;
 }
 
 /* ////////// NAV ////////// */
@@ -96,12 +95,12 @@ footer {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 4em;
 }
 
-.fullname { 
+h3 { 
     border-top: solid 0.5px #FDF5F1;
-    font-size: 1.1rem;
+    font-size: 1.5em;
     padding-top: 0.2rem;
 }
 
