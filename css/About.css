@@ -161,32 +161,62 @@ p {
     grid-column-end: 6;
     width: 80%;
 }
+                        /* ///// ACCORDION ///// */
 
-/* Style the buttons that are used to open and close the accordion panel */
 .accordion {
+    font-family: 'Akzidenz-GroteskNextReg', sans-serif;
+    font-size: 1.3rem;
     background-color: #eee;
-    color: #444;
+    color: #364771;
     cursor: pointer;
     padding: 18px;
+    margin-top: 0.5em;
     width: 100%;
     text-align: left;
-    border: none;
+    border: 2px solid #364771;
+    border-radius: 25px;
     outline: none;
     transition: 0.4s;
   }
   
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  button.active, .accordion:hover {
-    background-color: #ccc;
+  .accordion:hover {
+    background-color: #2B3F66;
+    color: #FDF5F1;
+  }
+
+  button.active {
+    background-color: #364771;
+    color: #FDF5F1;
+  }
+
+  button:hover {
+      color: #FDF5F1;
   }
   
-  /* Style the accordion panel. Note: hidden by default */
   .panel {
     padding: 0 18px;
-    background-color: white;
-    display: none;
+    background-color: transparent;
     overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
   }
+
+  .panel p {
+      margin-top: 0.5em;
+  }
+
+  .accordion:after {
+    content: '\02795';
+    font-size: 1rem;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  button.active:after {
+    content: "\2796";
+  }
+
+                        /* ///// ACCORDION ///// */
 
                         /* ///// INTERESTS ///// */
 
@@ -194,7 +224,7 @@ p {
 #toolset {
     grid-row-start: 5;
     grid-row-end: 6;
-    grid-column-start: 2;
+    grid-column-start: 3;
     grid-column-end: 6;
     width: 80%;
 }
