@@ -120,7 +120,7 @@ a.active {
 section {
     margin: 0 auto;
 }
-
+                        /* ///// INTRO ///// */      
 #intro {
     grid-row-start: 2;
     grid-row-end: 3;
@@ -137,8 +137,6 @@ h2 {
     margin: 0.7em 0 0.7em 0;
 }
 
-
-
 p {
     font-family: 'Akzidenz-GroteskNextLight', sans-serif;
     color: #364771;
@@ -149,8 +147,12 @@ p {
 .subheading {
     font-family: 'Akzidenz-GroteskNextReg', sans-serif;
     font-size: 1.3rem;
-    margin-top: 0.7rem;
+    margin: 0.7em 0 0 -1.5em;
 }
+
+                        /* ///// INTRO ///// */
+
+                        /* ///// INTERESTS ///// */
 
 #interests {
     grid-row-start: 3;
@@ -160,6 +162,9 @@ p {
     width: 80%;
 }
 
+                        /* ///// INTERESTS ///// */
+
+                        /* ///// TOOLSET ///// */
 #toolset {
     grid-row-start: 5;
     grid-row-end: 6;
@@ -177,6 +182,10 @@ li {
     margin-left: -1.5em;
 }
 
+p.subheading{
+    margin: 0.7em 0 0 0;
+}
+                    /* ///// TOOLSET ///// */
 
                     /* ///// FOOTER ///// */
 footer {
