@@ -38,6 +38,33 @@ section {
     max-width: 500px;
 }
 
+#icon-lrg {
+    display: inline;
+    width: 30px;
+    margin-right: 1em;
+}
+
+#icon-lrg:not(:hover) {
+    display: inline;
+    width: 30px;
+    margin-right: 1em;
+    transform-origin: 70% 70%;
+    animation-name: wave;
+    animation-duration: 2s;
+}
+
+@keyframes wave {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(30.0deg) } 
+   20% { transform: rotate(-10.0deg) }
+   30% { transform: rotate(30.0deg) }
+   40% { transform: rotate(-5.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }
+  100% { transform: rotate( 0.0deg) }
+
+}
+
 h2 {
     font-family: 'Akzidenz-GroteskNextReg', sans-serif;
     color: #364771;
@@ -112,10 +139,6 @@ p.subheading{
     margin-left: -2.4em;
 }
 
-#icon-lrg {
-    display: inline;
-    width: 30px;
-    margin-right: 1em;
-}
+
 
                         /* ///// TOOLSET ///// */

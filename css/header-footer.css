@@ -52,6 +52,10 @@ a {
     z-index: 1100;
 }
 
+.navigation div.line a:hover{
+    font-family: 'Akzidenz-GroteskNextReg', sans-serif;
+}
+
 a.active {
     font-family: 'Akzidenz-GroteskNextReg', sans-serif;
 }
