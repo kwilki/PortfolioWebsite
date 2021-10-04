@@ -29,10 +29,10 @@ html {
 }
 
 body {
-    min-height: 100%;
     display: grid;
-    grid-template-rows: 15% auto 10% ;
+    grid-template-rows: 15% 25% 25% 25% 10%;
     grid-template-columns: 10% 15% 15% 10% 25% 15% 10%;
+    row-gap: 1rem;
     background-color: #FDF5F1;
 
 }
@@ -90,6 +90,10 @@ a {
     padding: 0 0.5em 0 0.5em;
     z-index: 1100;
 }
+
+a.active {
+    font-family: 'Akzidenz-GroteskNextReg', sans-serif;
+}
                         /* ///// HEADER ///// */
 
                         /* ///// MAIN ///// */
@@ -97,10 +101,10 @@ a {
 #intro {
     grid-row-start: 2;
     grid-row-end: 3;
-    grid-column-start: 2;
-    grid-column-end: 6;
+    grid-column-start: 3;
+    grid-column-end: 7;
     width: 80%;
-    max-width: 350px;
+    max-width: 500px;
     min-height: 100vh;
     margin: 2em auto;
     overflow: scroll;
@@ -110,6 +114,7 @@ a {
 h2 {
     font-family: 'Akzidenz-GroteskNextReg', sans-serif;
     color: #364771;
+    font-size: 1.3rem;
 }
 
 
@@ -117,18 +122,32 @@ h2 {
 p {
     font-family: 'Akzidenz-GroteskNextLight', sans-serif;
     color: #364771;
+    font-size: 1.2rem;
+    padding-bottom: 0.5rem;
 }
 
 .subheading {
     font-family: 'Akzidenz-GroteskNextReg', sans-serif;
+    font-size: 1.3rem;
+    margin-top: 0.7em;
+}
+
+#interests {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    width: 80%;
+    min-width: 0;
+    margin: 2em auto;
 }
 
 
                     /* ///// FOOTER ///// */
 footer {
     display: grid;
-    grid-row-start: 3;
-    grid-row-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
     grid-column-start: 1;
     grid-column-end: 8;
     background-color: #364771;
@@ -149,4 +168,16 @@ img#portrait {
     display: block;
     width: 50px;
     margin: 2em auto;
+}
+
+#icon {
+    display: inline;
+    width: 15px;
+    margin-right: 1em;
+}
+
+#icon-lrg {
+    display: inline;
+    width: 30px;
+    margin-right: 1em;
 }
