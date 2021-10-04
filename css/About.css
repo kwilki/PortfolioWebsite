@@ -1,40 +1,7 @@
-@font-face {
-    font-family: 'Akzidenz-GroteskNextXLight';
-    src: url(../Typeface/AGNextExtraLight.otf);
-    /* font-weight: normal;
-    font-style: normal; */
-}
-
-@font-face {
-    font-family: 'Akzidenz-GroteskNextLight';
-    src: url(../Typeface/AGNextLight.otf);
-    /* font-weight: normal;
-    font-style: normal; */
-}
-
-@font-face {
-    font-family: 'Akzidenz-GroteskNextReg';
-    src: url(../Typeface/AGNextRegular.otf);
-    /* font-weight: normal;
-    font-style: normal; */
-}
-
-@media only screen and (max-width: 800px) {
-   section#intro {
-        grid-column-start: 1;
-        grid-column-end: 8;
-    }
-
-    section#interests {
-        grid-column-start: 1;
-        grid-column-end: 8;
-    }
-
-    #toolset {
-        grid-column-start: 1;
-        grid-column-end: 8;
-    }
-  }
+@import url(./fonts.css);
+@import url(./header-footer.css);
+@import url(./media-queries.css);
+@import url(./interest-accordion.css);
 
   
                         /* ///// INITIAL ///// */
@@ -55,65 +22,6 @@ body {
     background-color: #FDF5F1;
 
 }
-                        /* ///// INITIAL ///// */
-
-                        /* ///// HEADER ///// */
-
-header {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 100%;
-    grid-template-rows: 100%;
-    grid-column-start: 1;
-    grid-column-end: 8;
-    font-family: 'Akzidenz-GroteskNextXLight', sans-serif;
-    background-color: #364771;
-    box-shadow: 0 2px 10px #888888;
-}
-.wrapper {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    align-items: center;
-}
-
-h1 {
-    font-size: 3rem;
-}
-
-.logo {
-    display: flex;
-    justify-content: center;
-    color: #FDF5F1;
-    padding: 0.5em 0.5em 0 0.5em;
-    font-family: 'Akzidenz-GroteskNextXLight', sans-serif;
-    text-transform: uppercase;
-}
-
-.line {
-    border-top: solid 0.5px #FDF5F1;
-}
-
-nav.navigation  {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    padding-bottom: 1em;   
-}
-
-a {
-    font-family: 'Akzidenz-GroteskNextXLight', sans-serif;
-    text-decoration: none;
-    font-size: 1rem;
-    color: #FDF5F1;
-    margin-bottom: 0.2em;
-    padding: 0 0.5em 0 0.5em;
-    z-index: 1100;
-}
-
-a.active {
-    font-family: 'Akzidenz-GroteskNextReg', sans-serif;
-}
-                        /* ///// HEADER ///// */
 
                         /* ///// MAIN ///// */
 
@@ -160,63 +68,8 @@ p {
     grid-column-start: 2;
     grid-column-end: 6;
     width: 80%;
+    max-width: 700px;
 }
-                        /* ///// ACCORDION ///// */
-
-.accordion {
-    font-family: 'Akzidenz-GroteskNextReg', sans-serif;
-    font-size: 1.3rem;
-    background-color: #eee;
-    color: #364771;
-    cursor: pointer;
-    padding: 18px;
-    margin-top: 0.5em;
-    width: 100%;
-    text-align: left;
-    border: 2px solid #364771;
-    border-radius: 25px;
-    outline: none;
-    transition: 0.4s;
-  }
-  
-  .accordion:hover {
-    background-color: #2B3F66;
-    color: #FDF5F1;
-  }
-
-  button.active {
-    background-color: #364771;
-    color: #FDF5F1;
-  }
-
-  button:hover {
-      color: #FDF5F1;
-  }
-  
-  .panel {
-    padding: 0 18px;
-    background-color: transparent;
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.2s ease-out;
-  }
-
-  .panel p {
-      margin-top: 0.5em;
-  }
-
-  .accordion:after {
-    content: '\02795';
-    font-size: 1rem;
-    float: right;
-    margin-left: 5px;
-  }
-  
-  button.active:after {
-    content: "\2796";
-  }
-
-                        /* ///// ACCORDION ///// */
 
                         /* ///// INTERESTS ///// */
 
@@ -241,35 +94,7 @@ li {
 p.subheading{
     margin: 0.7em 0 0 0;
 }
-                    /* ///// TOOLSET ///// */
 
-                    /* ///// FOOTER ///// */
-footer {
-    display: grid;
-    grid-row-start: 6;
-    grid-row-end: 7;
-    grid-column-start: 1;
-    grid-column-end: 8;
-    background-color: #364771;
-    box-shadow: 0 -2px 10px #888888;
-    margin-top: 2em;
-}
-
-.copyright {
-    align-self: end;
-    color: #FDF5F1;
-    justify-self: right;
-    padding: 0 1em 0.5em 0;
-}
-
-                    /* ///// FOOTER ///// */
-
-
-img#portrait {
-    display: block;
-    width: 50px;
-    margin: 2em auto;
-}
 
 #icon {
     display: inline;
@@ -292,3 +117,5 @@ img#portrait {
     width: 30px;
     margin-right: 1em;
 }
+
+                        /* ///// TOOLSET ///// */

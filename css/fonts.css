@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Akzidenz-GroteskNextXLight';
+    src: url(../Typeface/AGNextExtraLight.otf);
+    /* font-weight: normal;
+    font-style: normal; */
+}
+
+@font-face {
+    font-family: 'Akzidenz-GroteskNextLight';
+    src: url(../Typeface/AGNextLight.otf);
+    /* font-weight: normal;
+    font-style: normal; */
+}
+
+@font-face {
+    font-family: 'Akzidenz-GroteskNextReg';
+    src: url(../Typeface/AGNextRegular.otf);
+    /* font-weight: normal;
+    font-style: normal; */
+}

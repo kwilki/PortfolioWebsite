@@ -1,0 +1,48 @@
+@media only screen and (max-width: 800px) {
+    section#intro {
+         grid-column-start: 1;
+         grid-column-end: 8;
+     }
+ 
+     section#interests {
+         grid-column-start: 1;
+         grid-column-end: 8;
+     }
+ 
+     #toolset {
+         grid-column-start: 2;
+         grid-column-end: 8;
+     }
+   }
+ 
+   @media only screen and (max-width: 600px) {
+    
+      section#toolset {
+          grid-column-start: 2;
+          grid-column-end: 8;
+      }
+ 
+      section#toolset h2, section#toolset p.subheading {
+         margin-left: -1.7em;
+     }
+    }
+ 
+    @media only screen and (max-width: 350px) {
+    
+     section#toolset {
+         grid-column-start: 2;
+         grid-column-end: 8;
+     }
+ 
+     section#toolset h2, section#toolset p.subheading {
+         margin-left: 0;
+     }
+ 
+     section#toolset ul li {
+         margin-left: 0;
+     }
+ 
+     section#toolset ul li#two-icons {
+         margin-left: -0.95em;
+     }
+   }

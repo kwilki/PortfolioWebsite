@@ -1,0 +1,52 @@
+.accordion {
+    font-family: 'Akzidenz-GroteskNextReg', sans-serif;
+    font-size: 1.3rem;
+    background-color: #eee;
+    color: #364771;
+    cursor: pointer;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    width: 100%;
+    text-align: left;
+    border: 2px solid #364771;
+    border-radius: 25px;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  .accordion:hover {
+    background-color: #2B3F66;
+    color: #FDF5F1;
+  }
+
+  button.active {
+    background-color: #364771;
+    color: #FDF5F1;
+  }
+
+  button:hover {
+      color: #FDF5F1;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: transparent;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .panel p {
+      margin-top: 0.5em;
+  }
+
+  .accordion:after {
+    content: '\02795';
+    font-size: 1rem;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  button.active:after {
+    content: "\2796";
+  }
