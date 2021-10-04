@@ -4,6 +4,35 @@
     margin: 0;
 }
 
+@media only screen and (max-width: 400px) {
+    nav span a {
+        font-size: 1em;
+        padding: 0;
+    }
+
+    div.logo h1 {
+        font-size: 3em;
+    }
+    
+    div.logo h3.fullname { 
+        border-top: solid 0.5px #FDF5F1;
+        font-size: 1.3em;
+        padding-top: 0.2rem;
+    }
+}
+
+@media only screen and (max-width: 315px) {
+    div.logo h1 {
+        font-size: 2.5em;
+    }
+    
+    div.logo h3.fullname { 
+        border-top: solid 0.5px #FDF5F1;
+        font-size: 1em;
+        padding-top: 0.2rem;
+    }
+}
+
 
 body{
     width: 100%;
