@@ -4,6 +4,7 @@
     background-color: #eee;
     color: #364771;
     cursor: pointer;
+    box-shadow: 0 2px 5px #888888;
     padding: 0.5em;
     margin-top: 0.5em;
     width: 100%;
