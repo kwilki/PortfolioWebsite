@@ -18,6 +18,25 @@
     /* font-weight: normal;
     font-style: normal; */
 }
+
+@media only screen and (max-width: 800px) {
+   section#intro {
+        grid-column-start: 1;
+        grid-column-end: 8;
+    }
+
+    #interests {
+        grid-column-start: 1;
+        grid-column-end: 8;
+    }
+
+    #toolset {
+        grid-column-start: 1;
+        grid-column-end: 8;
+    }
+  }
+
+  
                         /* ///// INITIAL ///// */
 * {
     margin: 0;
@@ -109,8 +128,6 @@ section {
     grid-column-end: 6;
     width: 80%;
     max-width: 500px;
-    /* min-height: 100vh; */
-    
 }
 
 h2 {
@@ -157,6 +174,7 @@ li {
     font-size: 1.2rem;
     padding-bottom: 0.5rem;
     list-style-type: none;
+    margin-left: -1.5em;
 }
 
 
@@ -169,6 +187,7 @@ footer {
     grid-column-end: 8;
     background-color: #364771;
     box-shadow: 0 -2px 10px #888888;
+    margin-top: 2em;
 }
 
 .copyright {
@@ -191,6 +210,16 @@ img#portrait {
     display: inline;
     width: 15px;
     margin-right: 1em;
+}
+
+#icon-no-gap {
+    display: inline;
+    width: 15px;
+    margin-right: 0.2em;
+}
+
+#two-icons {
+    margin-left: -2.4em;
 }
 
 #icon-lrg {
