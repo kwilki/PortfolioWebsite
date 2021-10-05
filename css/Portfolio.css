@@ -88,7 +88,7 @@ aside {
     grid-column-start: 2;
     grid-column-end: 5;
     margin: 0.5em 1.2em 0.5em 0;
-    /* max-width: 500px; */
+    justify-self: end;
 }
 #project{
     font-size: 1.2em;
