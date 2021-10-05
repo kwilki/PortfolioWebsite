@@ -2,6 +2,36 @@
 @import url(./header-footer.css);
 @import url(./AboutPage/about-media-queries.css);
 
+@media only screen and (min-width: 2000px) {
+    html body main aside {
+        grid-column-start: 4;
+        grid-column-end: 5;
+    }
+    aside h1#project {
+        font-size: 1.3em;
+    }
+
+    aside h2#date {
+        font-size: 1.2em;
+    }
+
+    aside h3, aside p {
+        font-size: 1.1em;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    main img#portfolio-image {
+        grid-column-start: 5;
+        grid-column-end: 6;
+    }
+
+    body main aside {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+}
+
 @media only screen and (max-width: 940px) {
     main img#portfolio-image {
         grid-column-start: 3;
@@ -21,7 +51,6 @@
         text-align: left;
     }
 }
-
   
                         /* ///// INITIAL ///// */
 * {
@@ -35,7 +64,7 @@ html {
 
 body {
     display: grid;
-    grid-template-rows: 15% auto auto auto auto 10%;
+    grid-template-rows: 10% auto auto auto auto 10%;
     grid-template-columns: 10% 15% 15% 10% 25% 15% 10%;
     row-gap: 1rem;
     background-color: #FDF5F1;
@@ -57,7 +86,8 @@ main {
 aside {
     grid-column-start: 2;
     grid-column-end: 5;
-    margin: 0.5em 1em 0.5em 0;
+    margin: 0.5em 1.2em 0.5em 0;
+    /* max-width: 500px; */
 }
 #project{
     font-size: 1.2em;
@@ -73,11 +103,12 @@ aside {
     text-align: right;
 }
 
-aside h3 {
+h3 {
+    font-size: 1.05em;
     font-family: 'Akzidenz-GroteskNextReg';
 }
 
-aside p{
+p{
     font-size: 1em;
     font-family: 'Akzidenz-GroteskNextLight';
 }
@@ -91,6 +122,6 @@ aside p{
 }
 
 #portfolio-image:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
     filter: grayscale(0%);
 }
