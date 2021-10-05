@@ -16,7 +16,7 @@ html {
 
 body {
     display: grid;
-    grid-template-rows: 15% auto auto auto auto 10%;
+    grid-template-rows: 200px auto auto auto auto 130px;
     grid-template-columns: 10% 15% 15% 10% 25% 15% 10%;
     row-gap: 1rem;
     background-color: #FDF5F1;

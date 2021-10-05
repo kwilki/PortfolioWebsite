@@ -36,6 +36,7 @@
     main img#portfolio-image {
         grid-column-start: 3;
         grid-column-end: 6;
+        filter: grayscale(0%);
     }
 
     main aside {
@@ -64,7 +65,7 @@ html {
 
 body {
     display: grid;
-    grid-template-rows: 10% auto auto auto auto 10%;
+    grid-template-rows: 200px auto auto auto auto 130px;
     grid-template-columns: 10% 15% 15% 10% 25% 15% 10%;
     row-gap: 1rem;
     background-color: #FDF5F1;
