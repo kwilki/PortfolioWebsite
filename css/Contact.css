@@ -1,104 +1,32 @@
+@import url(./fonts.css);
+@import url(./header-footer.css);
 
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+html {
+    height: 100%;
 }
 
-body{
-    width: 100%;
-    background-color: #FDF5F1;
-    overflow: hidden;
-    z-index: 200;
-}
-
-            /* ////// grid idea ////// */
-#gridContainer {
+body {
     display: grid;
-    grid-template-areas: 
-    "header"
-    "header"
-    "header"
-    "main"
-    "main"
-    "main"
-    "main"
-    "footer"
-    "footer"
-    ;
-    width: 100vw;
-    height: 100vh;
+    grid-template-rows: 200px auto 130px;
+    grid-template-columns: 10% 15% 15% 10% 25% 15% 10%;
+    row-gap: 1rem;
+    background-color: #FDF5F1;
+    min-height: 100vh;
 }
-            /* ////////// NAV ////////// */
-
-header {
-    grid-area: header;
-    background-color: #364771;
-    width: 100%;
-    /* min-height: 80vh; */ /*////////// open changed height ////////// */
-    transform: skewY(-10deg);
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    margin-top: -500px;
-    border-bottom: 1px solid #FDF5F1;
-    z-index: 1000;
+main {
+    grid-row-start: 2;
+    grid-row-end: 6;
+    grid-column-start: 3;
+    grid-column-end: 7;
 }
 
-a, span {
-    font-family: sans-serif;
-    text-decoration: none;
-    font-size: 1rem;
-    color: #FDF5F1;
-    display: inline-block;
-    margin-bottom: 0.2em;
-    padding: 0 0.25em 0 0.25em;
-    z-index: 1100;
+h1 {
+    font-size: 1.5em;
+    font-family: 'Akzidenz-GroteskNextLight', sans-serif;
+    margin-bottom: 0.1em;
 }
-
-a:hover{
-    cursor: pointer;
-}
-
-            /* ////////// NAV ////////// */
-
-
-            /* ////////// Main ////////// */
-
-#content{
-    grid-area: main;
-    display: flex;
-    align-items: center;
-    margin: auto;
-    width: 80%;
-    max-width: 350px;
-}
-
-            /* ////////// Main ////////// */
-
-
-            /* ////////// Footer ////////// */
-footer {
-    grid-area: footer;
-    background-color: #364771;
-    transform: skewY(-10deg);
-    display: flex;
-    align-items: flex-end;
-    justify-content: end;
-    margin-bottom: -10em;
-    /* transform: rotate(-10deg); */
-    /* bottom: 0; */
-    
-    z-index: 500;
-}
-
-.copyright {
-    color: #FDF5F1;
-    font-family: sans-serif;
-    font-size: 0.6rem;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 0 1em 1em 0;
-    z-index: 1100;
-}
-            /* ////////// Footer ////////// */
