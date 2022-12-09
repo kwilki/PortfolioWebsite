@@ -42,9 +42,10 @@
   }
 
   .accordion:after {
+    float: right;
     content: '\02795';
     font-size: 1rem;
-    float: right;
+    margin-top: 4px;
     margin-left: 5px;
   }
   
